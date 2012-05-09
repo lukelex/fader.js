@@ -13,7 +13,7 @@ fadeInWithId("elemId", 3);
 
 fadeOutWithClass("elemClass", 0, 4);
 
-fadeInWithClass("", 1, 2);
+fadeInWithClass("elemClass", 1, 2);
 ```
 
 Licence
