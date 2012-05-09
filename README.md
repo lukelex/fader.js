@@ -1,4 +1,4 @@
-fade.js
+fader.js
 =======
 
 A micro js to fade in and fade out elements.
