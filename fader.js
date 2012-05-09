@@ -1,3 +1,10 @@
+/*!
+* Fader.js
+*
+* Copyright 2012, Lukas Alexandre
+* Licensed under MIT
+*/
+
 function fadeOutWithId(id, time) {
   fadeWithId(id, time, 100, 0);
 }
