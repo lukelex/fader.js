@@ -1,19 +1,19 @@
 fader.js
 =======
 
-A micro js to fade in and fade out elements.
+A micro js to fade in and out elements.
 
 Usage
 =======
 
 ```javascript
-fadeOutWithId("elemId", 5);
+Fader.fadeOutWithId("#elemId", 5);
 
-fadeInWithId("elemId", 3);
+Fader.fadeInWithId("#elemId", 3);
 
-fadeOutWithClass("elemClass", 0, 4);
+Fader.fadeOutWithClass(".elemClass", 0, 4);
 
-fadeInWithClass("elemClass", 1, 2);
+Fader.fadeInWithClass(".elemClass", 1, 2);
 ```
 
 Licence
