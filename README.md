@@ -7,13 +7,23 @@ Usage
 =======
 
 ```javascript
-Fader.fadeOutWithId("#elemId", 5);
+// "elemId" => the id of the element to be faded out
+// 5        => the animation duration
+Fader.fadeOutWithId("elemId", 5);
 
-Fader.fadeInWithId("#elemId", 3);
+// "elemId" => the id of the element to be faded in
+// 3        => the animation duration
+Fader.fadeInWithId("elemId", 3);
 
-Fader.fadeOutWithClass(".elemClass", 0, 4);
+// "elemClass" => the class of the element to be faded out
+// 0           => the element index, in the retrieved objects, to be faded
+// 4           => the animation duration
+Fader.fadeOutWithClass("elemClass", 0, 4);
 
-Fader.fadeInWithClass(".elemClass", 1, 2);
+// "elemClass" => the class of the element to be faded in
+// 1           => the element index, in the retrieved objects, to be faded
+// 2           => the animation duration
+Fader.fadeInWithClass("elemClass", 1, 2);
 ```
 
 Licence
