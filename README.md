@@ -1,11 +1,10 @@
-fader.js
-=======
+#fader.js
 
-A micro js to fade in and out elements.
+A micro js that fades in and out html elements.
 
-Usage
-=======
+##Usage
 
+###Basics
 ```javascript
 // "elemId" => the id of the element to be faded out
 // 5        => the animation duration
@@ -26,10 +25,9 @@ Fader.fadeOutWithClass("elemClass", 0, 4);
 Fader.fadeInWithClass("elemClass", 1, 2);
 ```
 
-Licence
-=======
+##License
 
-Copyright (c) 2012 Lukas Alexandre. http://www.devgard.com/
+Copyright (c) 2012 Lukas Alexandre. http://www.devinscene.com.br/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
