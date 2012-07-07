@@ -1,5 +1,5 @@
 /*!
-* Fader.js
+* Fader.js v0.1.2
 *
 * Copyright 2012, Lukas Alexandre
 * Licensed under MIT
