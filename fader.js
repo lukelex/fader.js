@@ -1,5 +1,5 @@
 /*!
-* Fader.js 0.2.0
+* Fader.js 0.2.1
 *
 * Copyright 2012, Lukas Alexandre
 * Licensed under MIT
@@ -22,7 +22,7 @@ var Fader = {
     Fader.fadeElement(elem, time, 100, 0);
   },
   fadeInElement: function(elem, time) {
-    Fader.fadeWithElement(elem, time, 0, 100);
+    Fader.fadeElement(elem, time, 0, 100);
   },
   fadeWithId: function(id, time, ini, fin) {
     var target = document.getElementById(id);
