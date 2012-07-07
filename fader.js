@@ -1,5 +1,5 @@
 /*!
-* Fader.js
+* Fader.js 0.2.0
 *
 * Copyright 2012, Lukas Alexandre
 * Licensed under MIT
@@ -18,13 +18,22 @@ var Fader = {
   fadeInWithClass: function(className, index, time) {
     Fader.fadeWithClass(className, index, time, 0, 100);
   },
+  fadeOutElement: function(elem, time) {
+    Fader.fadeElement(elem, time, 100, 0);
+  },
+  fadeInElement: function(elem, time) {
+    Fader.fadeWithElement(elem, time, 0, 100);
+  },
   fadeWithId: function(id, time, ini, fin) {
     var target = document.getElementById(id);
-    Fader.exec_fade(target, time, ini, fin);
+    Fader.executeFade(target, time, ini, fin);
   },
   fadeWithClass: function(className, index, time, ini, fin) {
     var target = document.getElementsByClassName(className)[index];
     Fader.executeFade(target, time, ini, fin);
+  },
+  fadeElement: function(elem, time, ini, fin) {
+    Fader.executeFade(elem, time, ini, fin);
   },
   executeFade: function(target, time, ini, fin) {
     var alpha = ini;
