@@ -20,7 +20,7 @@ var Fader = {
   },
   fadeWithId: function(id, time, ini, fin) {
     var target = document.getElementById(id);
-    Fader.exec_fade(target, time, ini, fin);
+    Fader.executeFade(target, time, ini, fin);
   },
   fadeWithClass: function(className, index, time, ini, fin) {
     var target = document.getElementsByClassName(className)[index];
