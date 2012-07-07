@@ -4,6 +4,8 @@ A micro js that fades in and out html elements.
 
 ##Usage
 ###Basics
+You can either let Fader find the element, through:
+
 ```javascript
 // "elemId" => the id of the element to be faded out
 // 5        => the animation duration
@@ -24,8 +26,19 @@ Fader.fadeOutWithClass("elemClass", 0, 4);
 Fader.fadeInWithClass("elemClass", 1, 2);
 ```
 
+Or, find the element your self and pass it to Fader, through:
+```javascript
+// elem => the element to be faded in
+// 6    => the animation duration
+Fader.fadeInElement(elem, 6);
+
+// elem => the element to be faded out
+// 1    => the animation duration
+Fader.fadeOutElement(elem, 1);
+```
+
 ##TO DO
-* Fade passing an element;
+* Fade passing an element; [DONE]
 * Support collections.
 
 ##How to contribute
