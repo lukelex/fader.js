@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fader.js by lukasalexandre</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Fader.js</h1>
+        <p class="header">A fade in and out script</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/lukasalexandre/fader.js/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/lukasalexandre/fader.js/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/lukasalexandre/fader.js">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/lukasalexandre">lukasalexandre</a></p>
+
+
+      </header>
+      <section>
+        <h1>fader.js</h1>
+
+<p>A micro js that fades in and out html elements.</p>
+
+<h2>Usage</h2>
+
+<h3>Basics</h3>
+
+<p>You can either let Fader find the element, through:</p>
+
+<div class="highlight">
+<pre><span class="c1">// "elemId" =&gt; the id of the element to be faded out</span>
+<span class="c1">// 5        =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeOutWithId</span><span class="p">(</span><span class="s2">"elemId"</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+
+<span class="c1">// "elemId" =&gt; the id of the element to be faded in</span>
+<span class="c1">// 3        =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeInWithId</span><span class="p">(</span><span class="s2">"elemId"</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+
+<span class="c1">// "elemClass" =&gt; the class of the element to be faded out</span>
+<span class="c1">// 0           =&gt; the element index, in the retrieved objects, to be faded</span>
+<span class="c1">// 4           =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeOutWithClass</span><span class="p">(</span><span class="s2">"elemClass"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+
+<span class="c1">// "elemClass" =&gt; the class of the element to be faded in</span>
+<span class="c1">// 1           =&gt; the element index, in the retrieved objects, to be faded</span>
+<span class="c1">// 2           =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeInWithClass</span><span class="p">(</span><span class="s2">"elemClass"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<p>Or, find the element your self and pass it to Fader, through:</p>
+
+<div class="highlight">
+<pre><span class="c1">// elem =&gt; the element to be faded in</span>
+<span class="c1">// 6    =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeInElement</span><span class="p">(</span><span class="nx">elem</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+
+<span class="c1">// elem =&gt; the element to be faded out</span>
+<span class="c1">// 1    =&gt; the animation duration</span>
+<span class="nx">Fader</span><span class="p">.</span><span class="nx">fadeOutElement</span><span class="p">(</span><span class="nx">elem</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</pre>
+</div>
+
+
+<h2>TO DO</h2>
+
+<ul>
+<li>Fade passing an element; [DONE]</li>
+<li>Support collections.</li>
+</ul><h2>How to contribute</h2>
+
+<p>Please ensure that you provide appropriate test coverage and ensure the documentation is up-to-date. It is encouraged that you perform changes in a clean topic branch rather than a master and that you create a pull request for them. This will facilitate discussion and revision.</p>
+
+<p>Please be clean, keep your commits atomic and with the smallest possible logical change. This will increase the likelihood of your submission to be used.</p>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2012 Lukas Alexandre. <a href="http://www.devinscene.com.br/">http://www.devinscene.com.br/</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to use, copy and modify copies of the Software, subject
+to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+		
+  </body>
+</html>
