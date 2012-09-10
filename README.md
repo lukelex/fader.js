@@ -1,6 +1,6 @@
 #fader.js
 
-A micro js that fades in and out html elements.
+Fader.js is a stand-alone (no dependencies) micro js that implementes the fade-in and fade-out effect on html elements.
 
 ##Usage
 ###Basics
