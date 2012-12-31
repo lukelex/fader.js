@@ -52,7 +52,7 @@ var Fader = {
   executeFade: function(target, time, ini, fin) {
     if (Fader.supportsTransitions.length) {
       target.style.opacity = (ini === 100) ? 1 : 0;
-      target.style[Fader.supportsTransitions+"Transition"] = "opacity " + time + "ms linear";
+      target.style[Fader.supportsTransitions+"Transition"] = "opacity " + time * 1000 + "ms linear";
       target.style.opacity = (fin === 100) ? 1 : 0;
       return;
     }
