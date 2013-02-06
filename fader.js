@@ -1,5 +1,5 @@
 /*!
-* Fader.js 0.3.0
+* Fader.js 0.3.1
 *
 * Copyright 2012, Lukas Alexandre, Tait Brown
 * Licensed under MIT
@@ -8,15 +8,9 @@
 var Fader = {
   supportsTransitions: (function() {
     var b = document.body || document.documentElement;
-    var s = b.style;
-    var p = 'transition';
-    if(typeof s[p] == 'string') {return true; }
-
-    // Tests for vendor specific prop
-    v = ['Moz', 'Webkit', 'Khtml', 'O', 'ms'],
-    p = p.charAt(0).toUpperCase() + p.substr(1);
-    for(var i=0; i<v.length; i++) {
-      if(typeof s[v[i] + p] == 'string') { return v[i]; }
+    var v = ['transition', 'MozTransition', 'WebkitTransition', 'KhtmlTransition', 'OTransition', 'msTransition'];
+    for(var i=0, l=v.length; i<l; i++) {
+      if(typeof b.style[v[i]] == 'string') { return v[i]; }
     }
     return false;
   }()),
@@ -50,9 +44,9 @@ var Fader = {
     Fader.executeFade(elem, time, ini, fin);
   },
   executeFade: function(target, time, ini, fin) {
-    if (Fader.supportsTransitions.length) {
+    if (Fader.supportsTransitions) {
       target.style.opacity = (ini === 100) ? 1 : 0;
-      target.style[Fader.supportsTransitions+"Transition"] = "opacity " + time * 1000 + "ms linear";
+      target.style[Fader.supportsTransitions] = "opacity " + time * 1000 + "ms linear";
       target.style.opacity = (fin === 100) ? 1 : 0;
       return;
     }
