@@ -1,5 +1,5 @@
 /*!
-* Fader.js 0.3.2
+* Fader.js 0.3.3
 *
 * Copyright 2012, Lukas Alexandre, Tait Brown
 * Licensed under MIT
@@ -8,9 +8,16 @@
 var Fader = {
   supportsTransitions: (function() {
     var b = document.body || document.documentElement;
-    var v = ['transition', 'MozTransition', 'WebkitTransition', 'KhtmlTransition', 'OTransition', 'msTransition'];
-    for(var i=0, l=v.length; i<l; i++) {
-      if(typeof b.style[v[i]] == 'string') { return v[i]; }
+    var v = {
+      'MozTransition'    : 'transitionend',
+      'WebkitTransition' : 'webkitTransitionEnd',
+      'KhtmlTransition'  : 'KhtmlTransitionEnd',
+      'OTransition'      : 'oTransitionEnd',
+      'msTransition'     : 'MSTransitionEnd',
+      'transition'       : 'transitionEnd'
+    };
+    for(p in v){
+      if(typeof b.style[p] == 'string') { return [p, v[p]]; }
     }
     return false;
   }()),
@@ -47,9 +54,10 @@ var Fader = {
     var callback = callback || function(){};
     if (Fader.supportsTransitions) {
       target.style.opacity = (ini === 100) ? 1 : 0;
-      target.style[Fader.supportsTransitions] = "opacity " + time * 1000 + "ms linear";
+      target.style[Fader.supportsTransitions[0]] = "opacity " + time * 1000 + "ms linear";
       target.style.opacity = (fin === 100) ? 1 : 0;
-      setTimeout(callback, time*1000);
+      // coz transition works on IE10 but not less we use addEventListener only
+      target.addEventListener(Fader.supportsTransitions[1], callback, false);
       return;
     }
     var alpha = ini;
