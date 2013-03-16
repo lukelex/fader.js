@@ -56,6 +56,8 @@ Please be clean, keep your commits atomic and with the smallest possible logical
 ##Contributors
 - **[Lukas Alexandre](https://github.com/lukasalexandre)**
 - [Tait Brown](https://github.com/taitems)
+- [Stephen Daves](https://github.com/sdaves)
+- [Pavel Makovich](https://github.com/makovich)
 
 ##License
 Copyright (c) 2012 Lukas Alexandre. http://www.devinscene.com.br/
