@@ -37,6 +37,13 @@ Fader.fadeInElement(elem, 6);
 Fader.fadeOutElement(elem, 1);
 ```
 
+You can use even callback functions that fires after fade effect:
+```javascript
+Fader.fadeOutElement(elem, 0.5, function(){
+  elem.style.display = 'none';
+});
+```
+
 ##TO DO
 * Fade passing an element; [DONE]
 * Support collections.
