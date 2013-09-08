@@ -1,0 +1,23 @@
+{
+  "name": "fader.js",
+  "main": "fader.js",
+  "version": "0.3.2",
+  "homepage": "https://github.com/lukelex/fader.js",
+  "authors": [
+    "Lukas Alexandre <lukas@codelogic.me>"
+  ],
+  "description": "Fader.js is a stand-alone (no dependencies) micro js that implementes the fade-in and fade-out effect on html elements. It attempts a CSS3 transition, and if not supported, degrades to a JS based animation.",
+  "keywords": [
+    "animation",
+    "fadein",
+    "fadeout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
