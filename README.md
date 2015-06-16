@@ -48,19 +48,14 @@ Fader.fadeOutElement(elem, 0.5, function(){
 * Fade passing an element; [DONE]
 * Support collections.
 
-##How to contribute
-Please ensure that you provide appropriate test coverage and ensure the documentation is up-to-date. It is encouraged that you perform changes in a clean topic branch rather than a master and that you create a pull request for them. This will facilitate discussion and revision.
-
-Please be clean, keep your commits atomic and with the smallest possible logical change. This will increase the likelihood of your submission to be used.
-
 ##Contributors
-- **[Lukas Alexandre](https://github.com/lukasalexandre)**
+- [Lukas Alexandre](https://github.com/lukasalexandre)
 - [Tait Brown](https://github.com/taitems)
 - [Stephen Daves](https://github.com/sdaves)
 - [Pavel Makovich](https://github.com/makovich)
 
 ##License
-Copyright (c) 2012 Lukas Alexandre. http://www.devinscene.com.br/
+Copyright (c) 2012 Lukas Alexandre.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
