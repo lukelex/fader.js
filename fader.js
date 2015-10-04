@@ -16,7 +16,7 @@ var Fader = {
       'msTransition'     : 'MSTransitionEnd',
       'transition'       : 'transitionEnd'
     };
-    for(p in v){
+    for(var p in v){
       if(typeof b.style[p] == 'string') { return [p, v[p]]; }
     }
     return false;
@@ -51,7 +51,7 @@ var Fader = {
     Fader.executeFade(elem, time, ini, fin, callback);
   },
   executeFade: function(target, time, ini, fin, callback) {
-    var callback = callback || function(){};
+    callback = callback || function(){};
     if (Fader.supportsTransitions) {
       target.style.opacity = (ini === 100) ? 1 : 0;
       target.style[Fader.supportsTransitions[0]] = "opacity " + time * 1000 + "ms linear";
@@ -83,4 +83,4 @@ var Fader = {
     target.style.filter = "alpha(opacity="+ alpha +")";
     target.style.opacity = alpha/100;
   }
-}
+};
